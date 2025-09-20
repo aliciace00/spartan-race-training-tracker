@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spartan Sprint Training Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">Spartan Sprint Training</h1>
+                <div class="countdown">
+                    <span class="countdown-label">Race Day:</span>
+                    <span class="countdown-date">December 14, 2025</span>
+                    <span class="countdown-timer" id="countdown-timer"></span>
+                    <div class="connection-status" id="connection-status">
+                        <span class="status-indicator" id="status-indicator"></span>
+                        <span class="status-text" id="status-text">Syncing...</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="progress-overview">
+                <div class="progress-card">
+                    <h3>Overall Progress</h3>
+                    <div class="progress-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="completed-milestones">0</span>
+                            <span class="stat-label">Milestones Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="total-milestones">0</span>
+                            <span class="stat-label">Total Milestones</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="completed-obstacles">0</span>
+                            <span class="stat-label">Obstacles Mastered</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="obstacles-section">
+                <h2>Obstacle Training</h2>
+                <div class="obstacles-grid" id="obstacles-grid">
+                    <!-- Obstacles will be dynamically generated here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

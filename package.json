@@ -1,0 +1,22 @@
+{
+  "name": "spartan-race-training-tracker",
+  "version": "1.0.0",
+  "description": "A training tracker for Spartan Race Sprint preparation",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step required for static site'",
+    "start": "vercel dev"
+  },
+  "keywords": [
+    "spartan-race",
+    "training",
+    "fitness",
+    "obstacle-course"
+  ],
+  "author": "Alicia Cabrera",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
