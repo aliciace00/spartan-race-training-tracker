@@ -1,6 +1,8 @@
 {
   "version": 2,
   "name": "spartan-race-training-tracker",
+  "buildCommand": "echo 'No build step required for static site'",
+  "outputDirectory": ".",
   "headers": [
     {
       "source": "/(.*)",
